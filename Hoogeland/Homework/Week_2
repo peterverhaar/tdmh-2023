@@ -1,0 +1,63 @@
+Exercise 1.1.
+
+print('Hello world')
+
+
+Exercise 1.2.
+
+print('This is the first line.')
+print('This is the second line.')
+print('This line contains a \t tab.')
+
+
+Exercise 1.3.
+
+eend=1.5976354
+eend_int=int(eend)
+print(eend_int)
+
+
+Exercise 1.4
+
+print("It's not always easy to see the mistakes in your code.")
+print("The ability to debug can be really useful.")
+print("Don't forget to read the error messages!\nThey're often very useful.")
+
+
+Exercise 2.1.
+
+a=7
+b=9
+c=2
+print((a+b+c)/3)
+
+
+Exercise 2.2.
+
+a=2
+b=8
+print(a<b)
+print(a>b)
+print(a==b)
+
+
+Exercise 2.3.
+
+seconds_in_minute=60
+minutes_in_hour=60
+hours_in_day=24
+
+print("There are",7*(hours_in_day*minutes_in_hour*seconds_in_minute),"seconds in 7 days.")
+
+
+Exercise 2.4.
+
+nr_weeks=4
+print("Number of days: ", (nr_weeks*7) )
+
+
+Exercise 2.5.
+
+one_euro_in_dollars=1.2409
+dollars=(one_euro_in_dollars*150)
+print("For 150 euros you can buy", round(dollars, 2),"dollars.")
