@@ -1,0 +1,93 @@
+Exercise 3.1.
+
+a='unique'
+b='biodiversity'
+c=(a[:3]+b[5:])
+print (c)
+
+
+Exercise 3.2.
+
+first = 'vladimir'
+last = 'nabokov'
+fullName= last.title()+','+' '+first.title()
+print(fullName)
+initials= first[0]+last[0]
+print(initials.upper())
+
+
+Exercise 3.3.
+
+full_name="Eveline Hoogeland"
+new_name=full_name.replace(' ','')
+print(len(full_name))
+print(len(new_name))
+print(new_name)
+
+
+
+Exercise 3.4.
+
+url = 'https://www.universiteitleiden.nl'
+print(url[-2:])
+
+
+Exercise 3.5.
+
+filename = 'README.txt'
+print(filename[:6])
+
+
+
+Exercise 4.1.
+
+number=1
+for number in range (1,13):
+    print(f"Week {number}")
+
+
+Exercise 4.2.
+
+hour=21
+if hour<=11:
+    message='Good morning!'
+if hour>=12:
+    message='Good afternoon!'
+if hour>=18:
+    message='Good evening!'
+print(f"The hour is {hour}, {message}")
+
+
+Exercise 4.3.
+
+int( input( "Please enter a year: ") )
+year = int( input( "Please enter a year: ") )
+if year<=1599:
+    label='sixteenth'
+elif year<=1699:
+    label='seventeenth'
+elif year<=1799:
+    label='eighteenth'
+elif year<=1899:
+    label='nineteenth'
+elif year<=1999:
+    label='twentieth'
+elif year<=2020:
+    label='twentyfirst'
+print(f"The year {year} is in the {label} century.")
+
+
+Exercise 4.4.
+
+from random import randint
+
+number_to_guess = randint(1, 50)
+
+guessed_number = int( input( "Please enter a number between 1 and 50: ") )
+
+if number_to_guess == guessed_number:
+    message='Congratulations! You guessed the correct number.'
+else:
+    message='Ahh too bad! The number you guessed is incorrect. Please try again.'
+
+print(message)   
