@@ -1,0 +1,65 @@
+Homework week 3
+
+3.1
+string1 = "unique"
+string2 = "biodiversity"
+
+substring1 = string1 [0:3]
+substring2 = string2 [5:]
+
+print (substring1 + substring2)
+
+3.2
+To get Nabokov, Vladimir:
+first = 'vladimir'
+last = 'nabokov'
+
+fullName = last[0].upper() + last[1:7] + ", " + first[0].upper() + first[1:8]
+print (fullName)
+
+To get VN:
+first = 'vladimir'
+last = 'nabokov'
+
+fullName = first[0].upper() + last[0].upper()
+print (fullName)
+
+3.3
+name = 'Manon Anna Rieta Beentjes'
+new_name = name.replace (' ' , '')
+print (new_name)
+print (len(name))
+print (len(new_name))
+
+3.4
+url = 'https://www.universiteitleiden.nl'
+
+print( url[31:33])
+
+3.5
+filename = 'README.txt'
+
+print ( filename[0:6])
+
+
+4.1
+number = 1
+
+for i in range(0,12):
+    print (f'week {number+i}')
+
+4.2
+hour = 14
+
+if hour < 12:
+    label = 'Good morning!'
+if hour >= 12:
+    label = 'Good afternoon!'
+if hour >= 18:
+    label = 'Good evening!'
+
+    
+print( f'The hour is {hour} ({label})' )
+
+4.3
+?
