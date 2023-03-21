@@ -11,8 +11,9 @@ url = 'https://raw.githubusercontent.com/peterverhaar/tdmh-2023/main/Notebooks/R
 
 response = requests.get(url)
 if response:
+
     file_name = basename(url)
     notebook = response.text
-    with open(file_name+'2','w',encoding='utf-8') as out:
+    with open(file_name,'w',encoding='utf-8') as out:
         out.write(notebook)
 ```
