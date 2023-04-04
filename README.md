@@ -7,13 +7,16 @@ Indidual notebooks from the 'Notebooks' folder can be downloaded usng the code b
 import requests
 from os.path import basename
 
-url = 'https://raw.githubusercontent.com/peterverhaar/tdmh-2023/main/Notebooks/ResearchProject.ipynb'
+urls = ['https://raw.githubusercontent.com/peterverhaar/tdm_tutorial/master/Solutions/7 Sentiment_analysis.ipynb',
+'https://raw.githubusercontent.com/peterverhaar/tdm_tutorial/master/10 Named_Entity_Recognition.ipynb',
+'https://raw.githubusercontent.com/peterverhaar/tdm_tutorial/master/9 Diction.ipynb' ]
 
-response = requests.get(url)
-if response:
+for url in urls:
+    response = requests.get(url)
+    if response:
 
-    file_name = basename(url)
-    notebook = response.text
-    with open(file_name,'w',encoding='utf-8') as out:
-        out.write(notebook)
+        file_name = basename(url)
+        notebook = response.text
+        with open(file_name,'w',encoding='utf-8') as out:
+            out.write(notebook)
 ```
